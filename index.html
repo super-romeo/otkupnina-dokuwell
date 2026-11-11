@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Za prodavce koji šalju pakete sa otkupom: svakog dana uporedite isplate otkupnine kurira sa isporučenim porudžbinama i izvodom.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">OtkupKontrola</a></div>
-  <nav class="top"><a href="#sta" data-ev="click_nav_sta">Šta dobijate</a><a href="price.html" data-ev="click_nav_cena">Cena</a><a href="#primer" data-ev="click_nav_primer">Primer</a><a href="#start" data-ev="click_nav_start">Početak</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">OtkupKontrola</a>
+  <nav><a href="#sta" data-ev="click_nav_sta">Šta dobijate</a><a href="price.html" data-ev="click_nav_cena">Cena</a><a href="#primer" data-ev="click_nav_primer">Primer</a><a href="#start" data-ev="click_nav_start">Početak</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Svaki dinar otkupnine na računu — provera isplata svih kurirskih službi na jednom mestu</h1>
-    <p class="sub">Za internet prodavnice i prodavce koji šalju pakete sa otkupom preko dve ili više kurirskih službi: učitajte izveštaje o isplatama i izvod iz banke i odmah vidite koji paketi su isplaćeni, koji kasne, a koji su isplaćeni manje.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Ovo mi treba</a>
-    <p class="cta-note">Rani pristup · Na ovoj stranici još se ne prima plaćanje</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Za internet prodavnice i prodavce</p>
+      <h1 class="rise" style="--i:1" data-len="long">Svaki dinar otkupnine na računu&nbsp;<span class="soft">— provera isplata svih kurirskih službi na jednom mestu</span></h1>
+      <p class="rise" style="--i:2">Za internet prodavnice i prodavce koji šalju pakete sa otkupom preko dve ili više kurirskih službi: učitajte izveštaje o isplatama i izvod iz banke i odmah vidite koji paketi su isplaćeni, koji kasne, a koji su isplaćeni manje.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Ovo mi treba</a>
+      <p class="meta rise" style="--i:4">Rani pristup · Na ovoj stranici još se ne prima plaćanje</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" fill="#0a1524" font-weight="600">OtkupKontrola</text><line x1="120" y1="210" x2="1080" y2="210" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="250" width="44" height="44" rx="8" fill="#12397a" /><text x="200" y="282" font-size="32" fill="#0a1524">izvod iz banke</text><rect x="130" y="350" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="382" font-size="32" fill="#0a1524">Reklamacija</text><rect x="130" y="450" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="460" width="220" height="24" rx="12" fill="#dde2ea" /><rect x="130" y="550" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="560" width="300" height="24" rx="12" fill="#dde2ea" /><rect x="700" y="250" width="370" height="420" rx="20" fill="#dfe8f7" /><text x="730" y="320" font-size="34" fill="#0a1524" font-weight="600">Paketi</text><rect x="740" y="500" width="50" height="120" rx="8" fill="#ffffff" /><rect x="820" y="420" width="50" height="200" rx="8" fill="#12397a" /><rect x="900" y="460" width="50" height="160" rx="8" fill="#ffffff" /><rect x="980" y="530" width="50" height="90" rx="8" fill="#b9c3d2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Za</dt><dd>Internet prodavnice i prodavce</dd></div>
+      <div><dt>Provera</dt><dd>Provera isplata</dd></div>
+      <div><dt>Učitajte</dt><dd>Izveštaje o isplatama</dd></div>
+      <div><dt>Pristup</dt><dd>Rani pristup</dd></div>
+    </dl>
+  </section>
 
   <section id="sta" data-view="features_view">
-    <h2>Šta dobijate</h2>
-    <div class="grid">
-      <div class="card"><b>Sve kurirske službe</b><span>Izveštaji Post Express, D Express, AKS, BEX i City Express na jednom mestu.</span><br><a class="btn" href="price.html" data-ev="feature_kuriri">Ovo mi treba</a></div>
-      <div class="card"><b>Sparivanje sa porudžbinama</b><span>Svaka isplata povezana sa porudžbinom i paketom.</span><br><a class="btn" href="price.html" data-ev="feature_sparivanje">Ovo mi treba</a></div>
-      <div class="card"><b>Izvod iz banke</b><span>Uplate kurira sa izvoda povezane sa njihovim izveštajima.</span><br><a class="btn" href="price.html" data-ev="feature_banka">Ovo mi treba</a></div>
-      <div class="card"><b>Reklamacija</b><span>Spisak neisplaćenih i manje isplaćenih paketa za reklamaciju kuriru.</span><br><a class="btn" href="price.html" data-ev="feature_reklamacija">Ovo mi treba</a></div>
+    <div class="stack"><h2>Šta dobijate</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Sve kurirske službe</text><line x1="120" y1="490" x2="680" y2="490" fill="none" stroke="#dde2ea" stroke-width="4" /><rect x="150" y="270" width="70" height="220" rx="8" fill="#b9c3d2" /><rect x="280" y="350" width="70" height="140" rx="8" fill="#dde2ea" /><rect x="410" y="230" width="70" height="260" rx="8" fill="#12397a" /><rect x="540" y="390" width="70" height="100" rx="8" fill="#dfe8f7" /></svg></div>
+        <h3>Sve kurirske službe</h3><p>Izveštaji Post Express, D Express, AKS, BEX i City Express na jednom mestu.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_kuriri">Ovo mi treba</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="70" y="120" font-size="32" fill="#0a1524" font-weight="600">Sparivanje sa porudžbinama</text><rect x="70" y="170" width="250" height="340" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="480" y="170" width="250" height="340" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="96" y="210" width="160" height="20" rx="8" fill="#dde2ea" /><rect x="506" y="210" width="140" height="20" rx="8" fill="#b9c3d2" /><line x1="320" y1="220" x2="480" y2="220" fill="none" stroke="#dde2ea" stroke-width="4" /><rect x="96" y="290" width="120" height="20" rx="8" fill="#dde2ea" /><rect x="506" y="290" width="100" height="20" rx="8" fill="#b9c3d2" /><line x1="320" y1="300" x2="480" y2="300" fill="none" stroke="#12397a" stroke-width="4" /><rect x="96" y="370" width="180" height="20" rx="8" fill="#dde2ea" /><rect x="506" y="370" width="160" height="20" rx="8" fill="#b9c3d2" /><line x1="320" y1="380" x2="480" y2="380" fill="none" stroke="#dde2ea" stroke-width="4" /></svg></div>
+        <h3>Sparivanje sa porudžbinama</h3><p>Svaka isplata povezana sa porudžbinom i paketom.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_sparivanje">Ovo mi treba</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Izvod iz banke</text><rect x="120" y="190" width="300" height="28" rx="8" fill="#dde2ea" /><rect x="120" y="248" width="420" height="28" rx="8" fill="#b9c3d2" /><rect x="120" y="306" width="240" height="28" rx="8" fill="#dde2ea" /><rect x="120" y="364" width="360" height="28" rx="8" fill="#b9c3d2" /><circle cx="560" cy="430" r="58" fill="#dfe8f7" /><polyline points="532,430 552,452 592,404" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Izvod iz banke</h3><p>Uplate kurira sa izvoda povezane sa njihovim izveštajima.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_banka">Ovo mi treba</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Reklamacija</text><rect x="140" y="190" width="520" height="52" rx="26" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="268" width="520" height="52" rx="26" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="346" width="520" height="52" rx="26" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="424" width="520" height="52" rx="26" fill="#b9c3d2" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Reklamacija</h3><p>Spisak neisplaćenih i manje isplaćenih paketa za reklamaciju kuriru.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_reklamacija">Ovo mi treba</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Primer (izmišljeni podaci)</h2>
-    <p class="fine">Prodavnica sa 40 paketa dnevno preko dve kurirske službe. Izveštaji o isplatama i izvod za prošlu nedelju: 196 paketa isplaćeno tačno, 3 isporučena paketa nisu isplaćena posle pet radnih dana, 1 isplaćen manje. Spisak od 4 paketa sa brojevima pošiljki spreman je za reklamaciju.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Izaberite paket</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Primer</h2>
+      <p>Prodavnica sa 40 paketa dnevno preko dve kurirske službe. Izveštaji o isplatama i izvod za prošlu nedelju: 196 paketa isplaćeno tačno, 3 isporučena paketa nisu isplaćena posle pet radnih dana, 1 isplaćen manje. Spisak od 4 paketa sa brojevima pošiljki spreman je za reklamaciju.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Izaberite paket</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">196 paketa</text><circle cx="600" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">nisu isplaćena</text><circle cx="960" cy="150" r="20" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">prošlu nedelju</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" fill="#0a1524" font-weight="600">za reklamaciju</text><rect x="170" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="270" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="370" y="440" width="64" height="64" rx="10" fill="#12397a" /><rect x="470" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="570" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><text x="170" y="620" font-size="32" fill="#566174">brojevima pošiljki</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Kako radi</h2>
-    <p>Prodavnica koja šalje pakete sa otkupom ne dobija novac od kupca direktno: kurirska služba naplati otkup pri isporuci i kasnije ga isplati prodavcu. Otkupnina danas stiže na tekući račun, a na izvodu je često jedna uplata kurira za mnogo paketa. Kada prodavnica radi sa dve ili više kurirskih službi, provera da li je svaki paket isplaćen postaje posao za koji niko nema vremena.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Kako radi</h2></div>
+    <div class="stack">
+      <p>Prodavnica koja šalje pakete sa otkupom ne dobija novac od kupca direktno: kurirska služba naplati otkup pri isporuci i kasnije ga isplati prodavcu. Otkupnina danas stiže na tekući račun, a na izvodu je često jedna uplata kurira za mnogo paketa. Kada prodavnica radi sa dve ili više kurirskih službi, provera da li je svaki paket isplaćen postaje posao za koji niko nema vremena.</p>
     <p>OtkupKontrola spaja tri izvora: porudžbine iz vaše prodavnice, izveštaje o isplatama kurirskih službi i izvod iz banke. Porudžbine učitavate iz WooCommerce prodavnice ili iz tabele, izveštaje kurira kao fajlove koje već dobijate, a izvod iz banke kao fajl iz elektronskog bankarstva.</p>
     <p>Svaka isplata iz izveštaja kurira povezuje se sa porudžbinom i brojem pošiljke, a svaka uplata sa izvoda sa izveštajem kurira na koji se odnosi. Tako vidite za svaki paket: isporučen i isplaćen, isporučen a još nije isplaćen, isplaćen manje od iznosa otkupa, ili vraćen.</p>
     <p>Paketi koji su isporučeni, a nisu isplaćeni posle broja dana koji sami odredite, ulaze na spisak za proveru. Isto važi za pakete isplaćene u manjem iznosu. Za svaki paket na spisku imate broj pošiljke, datum isporuke, iznos otkupa i iznos isplate — sve što je potrebno za reklamaciju kuriru.</p>
@@ -115,31 +149,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Početak traje jedno popodne. Povežete WooCommerce prodavnicu ili učitate tabelu porudžbina, dodate kurirske službe sa kojima radite i učitate izveštaje o isplatama i izvode za poslednjih nekoliko nedelja. Već prvi pregled pokazuje da li postoje stari paketi koji nikada nisu isplaćeni.</p>
     <p>Posle toga je dovoljno da jednom dnevno ili jednom nedeljno učitate nove izveštaje i izvod. OtkupKontrola vas obaveštava kada se na spisku pojavi novi paket koji kasni ili je isplaćen manje, tako da ne morate sami da pregledate svaki red. Pregled radi u pregledaču na računaru i telefonu, bez instalacije.</p>
     <p>OtkupKontrola nije kurirska služba niti banka i ne prima novac umesto vas. Odluka o reklamaciji i komunikacija sa kurirom ostaju na prodavcu.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Pitanja i odgovori</h2>
-    <h3>Za koga je OtkupKontrola?</h3>
-    <p>Za internet prodavnice i prodavce koji šalju pakete sa otkupom preko više kurirskih službi.</p>
-    <h3>Koje kurirske službe su podržane?</h3>
-    <p>Post Express, D Express, AKS, BEX i City Express.</p>
-    <h3>Da li radi sa WooCommerce prodavnicom?</h3>
-    <p>Da, porudžbine se učitavaju iz WooCommerce prodavnice ili iz tabele.</p>
-    <h3>Da li primate novac umesto mene?</h3>
-    <p>Ne. Otkupnina i dalje stiže od kurira na vaš račun.</p>
-    <h3>Mogu li već da koristim uslugu?</h3>
-    <p>Još ne. Usluga je u pripremi i proveravamo da li je prodavcima potrebna.</p>
+    <div class="stack"><h2>Pitanja i odgovori</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Za koga je OtkupKontrola?</h3><p>Za internet prodavnice i prodavce koji šalju pakete sa otkupom preko više kurirskih službi.</p></div>
+      <div class="split flip"><h3>Koje kurirske službe su podržane?</h3><p>Post Express, D Express, AKS, BEX i City Express.</p></div>
+      <div class="split flip"><h3>Da li radi sa WooCommerce prodavnicom?</h3><p>Da, porudžbine se učitavaju iz WooCommerce prodavnice ili iz tabele.</p></div>
+      <div class="split flip"><h3>Da li primate novac umesto mene?</h3><p>Ne. Otkupnina i dalje stiže od kurira na vaš račun.</p></div>
+      <div class="split flip"><h3>Mogu li već da koristim uslugu?</h3><p>Još ne. Usluga je u pripremi i proveravamo da li je prodavcima potrebna.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Dodajte svoju prodavnicu</h2>
-    <p><label>Paketa dnevno<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— izaberite —</option><option>Do 10</option><option>11–50</option><option>51–200</option><option>Više od 200</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Dodaj prodavnicu</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Dodajte svoju prodavnicu</h2>
+    </div>
+    <div class="tile stack">
+      <label>Paketa dnevno<select data-ev-focus="form_start"><option value="">— izaberite —</option><option>Do 10</option><option>11–50</option><option>51–200</option><option>Više od 200</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Dodaj prodavnicu</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>OtkupKontrola</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Politika privatnosti</a></p>
-  <p class="muted">OtkupKontrola nije kurirska služba niti banka i ne prima novac umesto vas. Reklamacija i komunikacija sa kurirom ostaju na prodavcu.</p>
+  <p>OtkupKontrola nije kurirska služba niti banka i ne prima novac umesto vas. Reklamacija i komunikacija sa kurirom ostaju na prodavcu.</p>
 </div></footer>
 
 </body>
